@@ -1,0 +1,40 @@
+*{ padding: 0;
+margin: o;
+box-sizing: border-box;
+}
+.khung {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.khoi {
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    border: 4px solid #cdcbcb ;
+    background-color:#add8e6 ;
+    text-align: center;
+    font-size: 30px;
+
+}
+.khoi.khoi:nth-child(3){
+    width: 100%;
+    height: 50%;
+    
+}
+@media (max-width:768px) {
+    
+.khung {
+    flex-flow: column wrap;
+
+
+}
+.khoi {
+    width: 100%;
+    height: 50px;
+}
+
+    
+}
