@@ -1,0 +1,50 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+/*tạo banner nằm giữa màng hình*/
+body{
+  display: grid;
+  background-color: black;
+  place-items: center;
+  margin: 0;
+  min-height: 100vh;
+  
+}
+.banner {
+  width:1500px ;
+  height:300px ;
+  border-radius: 18px;
+  background: #3268fa;
+  position: relative;
+  overflow: hidden;/*ẩn các phần tràng ra màng hình*/
+  
+}
+/*em dùng màu màu trắng cho viền để bản thân dễ hiểu ạ*/
+.ring {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  border: 30px solid white ;
+  border-radius: 50%;
+  position: absolute;
+}
+.ring-left {
+  top:-20%;
+  left: 5%;
+  border-color: white transparent transparent  white;
+  transform: rotate(-30deg);
+}
+.ring-top {
+  top: -50%;
+  right:10%;
+ 
+ 
+}
+.ring-bottom {
+  top: 60%;
+  left: 50%;
+  border-color: white white transparent transparent;
+ 
+}
