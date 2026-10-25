@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1b1b1b;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+   
+.main{
+    width: 600px;
+    height: 150px;
+    background-color: #e3e3e3;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    
+
+}
+h1{
+    position: absolute;
+    top:10px;
+    left: 20px;
+}
+button{
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    position: static;
+}
+/*mastercard*/
+.master{
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.master span{
+    width: 30px;
+    height: 30px;
+    border: 4px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    
+}
+.red{
+    background-color: #eb001b;
+    top:10px;
+    left:25px;
+
+}
+.orange{
+    background-color: #f79e1b;
+    opacity: 0.7;
+    top:10px;
+    right: 25px;
+}
+/*paypal*/
+.paypal{
+    text-align: center;
+   padding-left: 0;
+}
+.p{
+    font-size:15px ;
+    font-weight: bold;
+    font-style: italic;
+    color: #019ee1;
+    position: relative;
+}
+.p::before{
+    content: "P";
+    color: #1a4088;
+    position: absolute ;
+    
+    top:-3px; ;
+    left: -2px;
+}
+.pal{
+    color: #1a4088;
+    font-weight: bold;
+
+}
+.pal::after{
+    content: "Pal";
+    color: #019ee1;
+}
+/*VISA*/
+.visa{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    color: #0056a3;
+    font-weight: bold;
+    position: relative;
+}
+.visa::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color:#ffa700 ;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    position: absolute;
+    top: 25px;
+
+}
+.american{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 15px;
+    gap:0;
+    color: #0b70cf;
+    font-style: italic;
+    font-weight: bold;
+
+}
