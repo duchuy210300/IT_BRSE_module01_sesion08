@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(8, 6, 6,0.7);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.main {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.logo {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    flex-shrink: 0;
+    line-height: 1;
+    clip-path: polygon(
+    50% 0,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0 75%,
+    0 25%)
+    ;
+}
+.logo p{
+    transform: rotate(-45deg);
+}
+.text {
+    width:200px ;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50%;
+    height: 100px;
+    padding: 25% 0;
+   
+}
