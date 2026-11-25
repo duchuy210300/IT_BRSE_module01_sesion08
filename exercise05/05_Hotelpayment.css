@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header a:hover{
+    color:red
+}
+.header {
+    width: 100%;
+    heidght: 50px;
+    padding: 10px 30px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10px;
+}
+.logo {
+    margin-right: auto;
+    height: 40px;
+    padding: 0;
+    line-height: 1;
+    font-size: 20px;
+}
+.logo>div{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    background: rgb(56, 30, 159);
+   padding: 4px;
+    line-height: 1;
+    clip-path: polygon( 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+}
+.logo>div p{
+    transform: rotate(-45deg);
+     color: aliceblue;
+}
+.forflag{
+    text-align: center;
+    height: 30px;
+    display: flex;
+    flex-direction: row; 
+    padding: 8px;
+
+}
+.flag {
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.bell {
+
+}
+.avata {
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.foravata{
+    text-align: center;
+    height: 30px;
+    display: flex;
+    flex-direction: row;  
+    border-left: 1px solid; 
+}
+.foravata p {
+    margin-top: 8px;
+    position: relative;
+}
+.foravata p::after{
+    content: "";
+    width:10px;     
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 4px;
+    right: -14px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+/*thân*/
+/*
+.main{
+    padding: 20px, 60px, 80px, 60px;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    */
+    input{
+        background-color:#f4f4f7 ;
+    }
+    .date {
+        line-height: 1;
+        width: 100px;
+        border: none;
+}
+.input{
+    background-color:#f4f4f7 ;
+    margin: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+.visitdate::before{
+    content: "Date";
+    display: block;
+    font-weight: bold;
+}
+.visitdate:checked{
+    background-color: red;
+
+}
+.traveller input{
+    border: none;
+    background-color:#f4f4f7 ;
+}
+.traveller::before{
+    content:"Traveller";
+    display: block;
+    font-weight: bold;
+}
